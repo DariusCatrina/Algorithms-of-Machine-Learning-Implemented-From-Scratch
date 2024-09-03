@@ -30,7 +30,7 @@ class KNNClassifier(object):
                 num_pos = sum(classes)
                 num_neg = len(classes) - num_pos
 
-                if num_pos/len(classes) >= 0.4:
+                if num_pos/len(classes) > 0.5:
                     y_pred.append(1)
                 else:
                     y_pred.append(0)
